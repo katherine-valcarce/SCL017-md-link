@@ -1,27 +1,30 @@
 const fs = require('fs');
-const route = __dirname;
 const path = require("path");
 
-fs.readdir(route, 'utf8', (err, list) => {
+module.exports = (dirPath) => {
+  return readMyFile(dirPath);
+}
 
-  list.forEach(list => {
-      let mdFile = path.extname(list);
-      const isDirectory = fs.lstatSync(list).isDirectory() 
-      console.log(list, isDirectory)
-      if (mdFile == '.md') { 
-          mdFile.includes(list);
-          console.log(list, isDirectory);
-      }
+const readMyFile = (dirPath) => {
+  return new Promise ((resolve, reject) => {
+    fs.readFile(dirPath, 'utf8', (err, data) => {
+      if (err) reject(err);
+      resolve(data)
+    })
   })
-})
+}
+/* module.exports = () => {
+  return new Promise ((resolve, reject) => {
+      fs.readdir(route, 'utf8', (err, list) => {
+        const isDirectory = fs.lstatSync(route).isDirectory()
+        list.forEach(list => {
+            let mdFile = path.extname(list);
+            if (mdFile == '.md') { 
+                mdFile.includes(list);
 
-/*fs.readdir(route,(error, files)=> {
-    if(error){
-        throw error;
-      }
-      files.forEach(element => {
-        const isDirectory = fs.lstatSync().isDirectory() 
-        console.log(isDirectory)
-      });
-     console.log(files)
-})*/
+            }
+        })
+        resolve (list, isDirectory); 
+      })
+  })
+};*/
