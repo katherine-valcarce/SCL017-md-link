@@ -26,14 +26,20 @@ const readMyFile = (dirPath) => {
                   reject(err);
                 }else {
                   dataMD += data;
+                  const links = markdownLinkExtractor(dataMD);
+                  
+                  let absolutePath = path.resolve(listMD[i]);
+                  let documentMd = path.basename(listMD[i]);
+                  let arrayLink = links.map((link)=>{ //.map toma el contenido del arreglo, lo ordena con los parametros requeridos y los devuelve en un nuevo arreglo.
+                    console.table({absolutePath, documentMd, link}); 
+                })
+                console.log()
                 }
-                const links = markdownLinkExtractor(dataMD, false);
-                  links.forEach(link => console.log(link));  //devuelve array de los links
+                
 
-                const details = markdownLinkExtractor(dataMD, true);
-                  details.forEach(detail => console.log(detail));  //devuelve listado de los links
+
               })
-          }
+            }
         })
       })
 }
