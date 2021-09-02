@@ -3,14 +3,14 @@ const path = require("path");
 const markdownLinkExtractor = require('markdown-link-extractor');
 
 
-module.exports = (dirPath) => {
-  return readMyFile(dirPath);
+module.exports = (dirPath, options) => {
+  return readMyFile(dirPath, options);
 }
 
 let listMD = [];
 let dataMD = '';
 
-const readMyFile = (dirPath) => {
+const readMyFile = (dirPath, options) => {
   return new Promise ((resolve, reject) => {
     fs.readdir(dirPath, 'utf8', (err, list) => {
         list.forEach(list => {
@@ -33,11 +33,8 @@ const readMyFile = (dirPath) => {
                   let arrayLink = links.map((link)=>{ //.map toma el contenido del arreglo, lo ordena con los parametros requeridos y los devuelve en un nuevo arreglo.
                     console.table({absolutePath, documentMd, link}); 
                 })
-                console.log()
+                resolve(links)
                 }
-                
-
-
               })
             }
         })
