@@ -41,7 +41,7 @@ mdLinks(path, options)
             }
             if (options.validate == true) {
                 
-                console.log('file:', url.file,'text:',url.text, '-', url.href, 'status:', meta.status, status)
+                console.log(url.file,url.text, url.href, 'status:', meta.status, status)
             }
         })
         
