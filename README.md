@@ -36,5 +36,8 @@ $ md-links-kyvh ./ --validate
     - validate: Booleano que determina si se desea validar los links encontrados.
 
 ## Diagrama de flujo 🛠️
+![diagrama](https://user-images.githubusercontent.com/83970233/132140710-cdb93af4-ab45-4378-9637-3110751b3b64.png)
 
 ## Imagen resultado de ejecución de libreria ⚙️
+<img width="745" alt="Captura de pantalla 2021-09-05 173132" src="https://user-images.githubusercontent.com/83970233/132140717-db08cdf0-72be-4972-bf50-6bc20002bc35.png">
+
