@@ -27,7 +27,6 @@ const readMyFile = (dirPath) => {
                 }else {
                   dataMD += data;
                   const arrayLinks = markdownLinkExtractor(dataMD, true);
-                   let link = arrayLinks.href;
                   arrayLinks.filter(link => ~link.href.indexOf("http"));
                     let documentMd = path.basename(listMD[i]);
                     arrayLinks.forEach(link => {
