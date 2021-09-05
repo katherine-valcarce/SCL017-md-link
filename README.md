@@ -2,12 +2,12 @@
 
 ## Index
 
-* [MD-Links-kyvh](#MD-Links-kyvh)
-* [Instalación](#Instalación)
-* [Guía de uso](#Guía-de-uso)
+* [MD-Links-kyvh](#md-links-kyvh-)
+* [Instalación](#instalación-)
+* [Guía de uso](#guía-de-uso-)
 * [API](#API)
-* [Diagrama de flujo](#Diagrama-de-flujo)
-* [Imagen resultado de ejecución de libreria](#Imagen-resultado-de-ejecución-de-libreria)
+* [Diagrama de flujo](#diagrama-de-flujo-%EF%B8%8F)
+* [Imagen resultado de ejecución de libreria](#imagen-resultado-de-ejecución-de-libreria-%EF%B8%8F)
 
 ***
 
