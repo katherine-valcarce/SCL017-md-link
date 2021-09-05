@@ -39,5 +39,5 @@ $ md-links-kyvh ./ --validate
 ![diagrama](https://user-images.githubusercontent.com/83970233/132140710-cdb93af4-ab45-4378-9637-3110751b3b64.png)
 
 ## Imagen resultado de ejecución de libreria ⚙️
-<img width="745" alt="Captura de pantalla 2021-09-05 173132" src="https://user-images.githubusercontent.com/83970233/132140717-db08cdf0-72be-4972-bf50-6bc20002bc35.png">
+![Captura de pantalla 2021-09-05 173132](https://user-images.githubusercontent.com/83970233/132140849-e2b4faf5-178d-4791-8fd6-8f0ef6b66e58.png)
 
