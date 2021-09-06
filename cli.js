@@ -27,6 +27,7 @@ if (
     options.validate = false;
     options.stats = false;
 }
+
 let status = '';
 
 mdLinks(path, options)
@@ -40,7 +41,6 @@ mdLinks(path, options)
                 status = 'FAIL';
             }
             if (options.validate == true) {
-                
                 console.log(url.file,url.text, url.href, 'status:', meta.status, status)
             }
         })

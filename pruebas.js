@@ -14,7 +14,6 @@ fs.readdir(path, 'utf8', (err, list) => {
             for (let i = 0; i < listMD.length; i++) {
             return fs.readdir((listMD[i].toString()), 'utf8', (err, list) => {
                 list.forEach(list => {
-                   
                     console.log(list);
                 })
             })
