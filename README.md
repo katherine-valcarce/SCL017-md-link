@@ -2,12 +2,12 @@
 
 ## Index
 
-* [MD-Links-kyvh](#MD-Links-kyvh)
-* [Instalación](#Instalación)
-* [Guía de uso](#Guía-de-uso)
+* [MD-Links-kyvh](#md-links-kyvh-)
+* [Instalación](#instalación-)
+* [Guía de uso](#guía-de-uso-)
 * [API](#API)
-* [Diagrama de flujo](#Diagrama-de-flujo)
-* [Imagen resultado de ejecución de libreria](#Imagen-resultado-de-ejecución-de-libreria)
+* [Diagrama de flujo](#diagrama-de-flujo-%EF%B8%8F)
+* [Imagen resultado de ejecución de libreria](#imagen-resultado-de-ejecución-de-libreria-%EF%B8%8F)
 
 ***
 
@@ -36,5 +36,8 @@ $ md-links-kyvh ./ --validate
     - validate: Booleano que determina si se desea validar los links encontrados.
 
 ## Diagrama de flujo 🛠️
+![diagrama](https://user-images.githubusercontent.com/83970233/132140710-cdb93af4-ab45-4378-9637-3110751b3b64.png)
 
 ## Imagen resultado de ejecución de libreria ⚙️
+![Captura de pantalla 2021-09-05 173132](https://user-images.githubusercontent.com/83970233/132140849-e2b4faf5-178d-4791-8fd6-8f0ef6b66e58.png)
+
